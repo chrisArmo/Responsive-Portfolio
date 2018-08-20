@@ -206,7 +206,7 @@ footer p {
 
 .portfolio figure {
     position: relative;
-    margin: 10px 5px;
+    margin: 20px 5px;
 }
 
 .portfolio img {
@@ -255,4 +255,68 @@ footer p {
         margin-right: 2em;
         margin-left: 2em;
     }
+}
+
+/* Contact */
+
+.contact form,
+.contact form > div {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.contact form {
+    align-items: stretch;
+}
+
+.contact form > div {
+    margin-bottom: 25px;
+}
+
+.contact label {
+    margin-bottom: 5px;
+}
+
+.contact input[type=text],
+.contact input[type=email],
+.contact textarea {
+    border-radius: 0.2em;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.4);
+    outline-color: #4aaaa5;
+}
+
+.contact input[type=text],
+.contact input[type=email] {
+    padding: 0.4em 0.8em;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #9a99b2;
+}
+
+.contact button[type=button] {
+    border-radius: 0.3em;
+    border-style: none;
+    background: #4aaaa5;
+    color: #fff;
+    align-self: center;
+    cursor: pointer;
+    transition: background 0.3s ease-out;
+    outline: none;
+}
+
+.contact button[type=button]:hover {
+    background: rgba(74, 170, 165, 0.85);
+}
+
+.contact a {
+    display: block;
+    padding: 0.7em;
+    color: inherit;
 }
