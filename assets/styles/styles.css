@@ -34,17 +34,23 @@ li {
     list-style: none;
 }
 
+/* Wrapper */
+
+.wrapper {
+    min-height: calc(100vh - 94.19px);
+}
+
 /* Container */
 
 .container {
     position: relative;
     max-width: 960px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 672px) {
     .container {
-        width: 95%;
-        margin: 0 auto;
+        width: 90%;
     }
 }
 
@@ -84,7 +90,7 @@ nav li {
 
 nav a {
     display: block;
-    padding: 10px;
+    padding: 9px;
     color: inherit;
 }
 
@@ -114,6 +120,10 @@ nav a {
     nav ul,
     nav li:last-child a {
         padding-right: 0;
+    }
+
+    nav ul {
+        padding-left: 0;
     }
 }
 
@@ -147,15 +157,17 @@ footer p {
     padding-bottom: 20px;
     border-bottom: 2px solid #9a99b2;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 @media screen and (min-width: 672px) {
     .main-section {
-        width: 95%;
+        width: 90%;
+        padding: 1.5em 1.8em;
     }
 }
 
-/* About section */
+/* About */
 
 .about figure {
     width: 100%;
@@ -184,4 +196,63 @@ footer p {
     content: " ";
     display: table;
     clear: both;
+}
+
+/* Portfolio */
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio figure {
+    position: relative;
+    margin: 10px 5px;
+}
+
+.portfolio img {
+    width: 94%;
+}
+
+.portfolio figcaption {
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    width: 94%;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    background: rgba(74, 170, 165, 0.8);
+    color: #fff;
+    font-size: 1.1em;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 489px) {
+    .portfolio figcaption {
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+    }
+}
+
+@media screen and (min-width: 672px) {
+    .gallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .portfolio figure {
+        width: 40%;
+    }
+
+    .portfolio figcaption {
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .gallery {
+        margin-right: 2em;
+        margin-left: 2em;
+    }
 }
