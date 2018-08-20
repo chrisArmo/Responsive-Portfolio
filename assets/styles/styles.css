@@ -92,7 +92,7 @@ nav a {
     header {
         background: #fff;
     }
-    
+
     header h1,
     nav {
         display: inline-block;
@@ -155,4 +155,33 @@ footer p {
     }
 }
 
+/* About section */
 
+.about figure {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.about img {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+@media screen and (min-width: 672px) {
+    .about figure {
+        float: left;
+        width: 50%;
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Clearfix */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
